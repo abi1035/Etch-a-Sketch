@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+        <!-- <label for="gridValue" id="gridLabel">Grid NUmber [1-64]:</label><br>
+        <input type="number" id="gridValue" name="gridValue" value=""><br>
+        <input type="submit" value="Submit" onclick="userInput()">
+       -->
+
+       <div class="header">
+       <h1 style="text-align: center; padding-bottom: 20px;">Etch-A-Sketch</h1>
+      </div>
+
+        <div class="container">
+          <div class="colorButtons">
+        <button id="black" value="black" name="black" onclick=buttonClick(event)>Black</button>
+       <button id="RGBBlue" value="RGBBlue" name="RGBBlue" onclick=buttonClick(event)></button>
+       <button id="RGBPink" value="RGBPink" name="RGBPink" onclick=buttonClick(event)></button>
+       <button id="reset" value="reset" name="reset" onclick="resetSketch()"><img src="./images/retry.png" alt="retry" width="30px" height="30px"></button>
+      </div>
+
+            <div class="sketch-container">
+              <div class="sketch-screen">
+              </div>
+            </div>
+          </div>
+          <footer>
+            <h2>Design by A.Kenneth 2024</h2>
+          </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

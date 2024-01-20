@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  /* background-color: wheat; */
+  height: 60px;
+  margin-top: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  /* border: 10px solid red; */
+  gap: 190px;
+}
+
+
+
+.sketch-screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  border: 5px solid black;
+
+}
+
+.sketch-screen>div {
+  height: auto;
+  flex: 1 0 auto;
+
+  /* make columns vertical flexboxes */
+  display: flex;
+  flex-direction: column;
+}
+
+.sketch-screen>div>* {
+  /* make rows evenly distributed */
+  flex: 1;
+}
+
+.colorButtons{
+  /* border: 10px solid red; */
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-between;
+  /* padding-top: 50px */
+}
+
+button{
+  height: 50px;
+  width: 100px;
+}
+
+
+/* BUTTON COLORS */
+
+#black{
+  background-color: black;
+}
+
+#RGBBlue{
+  background-color: skyblue;
+}
+
+#RGBPink{
+  background-color: lightcoral;
+}
